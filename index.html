@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tímaverkefni Form</title>
+  </head>
+  <body>
+    <h1>Tímaverkefni - Form</h1>
+
+    <form action="/thankyou.html" method="get">
+      <label for="name">Fullt nafn:</label> <br />
+      <input type="text" name="name" id="name" maxlength="50" required />
+
+      <br /><br />
+
+      <label for="email">Netfang:</label> <br />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Dæmi: johndoe@johndoe.com"
+        required
+      />
+
+      <br /><br />
+
+      <label for="password">Lykilorð:</label> <br />
+      <input
+        type="password"
+        name="password"
+        id="password"
+        minlength="5"
+        maxlength="15"
+        required
+      />
+
+      <br /><br />
+
+      <label for="confirm">Staðfestu Lykilorð:</label> <br />
+      <input
+        type="password"
+        name="confirm"
+        id="confirm"
+        minlength="5"
+        maxlength="15"
+        required
+      />
+
+      <br /><br />
+
+      <label for="age">Aldur:</label> <br />
+      <input type="number" name="age" id="age" min="1" max="99" required />
+
+      <br /><br />
+
+      <label for="birthdate">Fæðingardagur:</label> <br />
+      <input type="date" name="birthdate" id="birthdate" required />
+
+      <br /><br />
+      <p>Kyn:</p>
+      <label for="male">Karl</label>
+      <input type="radio" name="gender" id="male" value="male" required />
+      <label for="female">Kona</label>
+      <input type="radio" name="gender" id="female" value="female" required />
+      <label for="other">Annað</label>
+      <input type="radio" name="gender" id="other" value="other" required />
+
+      <br /><br />
+
+      <label for="checkbox">Samþykki skilmála </label> <br />
+      <input type="checkbox" name="samþykkt" id="checkbox" value="samþykkt" required />
+      <br><a href="/page2.html">Skoða skilmála</a>
+
+      <br/><br />
+
+      <button type="submit">Skrá mig</button>
+    </form>
+  </body>
+</html>
